@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 5000;
 
 
 server.get("/", (req, res) => {
-    res.send('Welcome to node js tutorial');
+    res.send('Welcome to home page');
 });
 server.get("/product/:id", (req, res) => {
     res.send('Welcome to single product page');
