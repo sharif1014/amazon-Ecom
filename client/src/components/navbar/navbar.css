@@ -1,0 +1,40 @@
+.navbar {
+  width: 100%;
+}
+
+.search {
+  background: #ffffff;
+  border: none;
+  border-radius: 0.8rem;
+}
+.searchBtn {
+  cursor: pointer;
+  background: #ff8000;
+  color: #203040;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+input,
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+}
+.searchInput {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.cart {
+  position: relative;
+  font-size: 1.8rem;
+}
+.link .badge {
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  font-size: 1rem;
+  background: #ff8000;
+  color: #203040;
+  position: absolute;
+  top: 0.2rem;
+  right: 0.2rem;
+}

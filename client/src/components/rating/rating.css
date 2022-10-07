@@ -1,0 +1,12 @@
+.rating {
+  margin: 1rem 0;
+  cursor: pointer;
+}
+.rating span {
+  font-size: 1.4rem;
+  color: #e6cf02;
+}
+.ratingText {
+  margin-left: 1rem;
+  color: #545555 !important;
+}

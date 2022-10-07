@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+/* Reset style*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%; /* 16px X 62.5% =10px =1rem */
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+h1 {
+  font-size: 1.8rem;
+}
+h2 {
+  font-size: 1.6rem;
+}
+h3 {
+  font-size: 1.4rem;
+}
+.link {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+.link:hover {
+  color: #ff8000;
+  transition: all 0.4s ease-in-out;
+}
+.link.brand {
+  font-size: 3.3rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+button.primary {
+  background-color: #a4a4a4;
+  padding: 0.5rem 1rem;
+  border: 0.1rem solid #a4a4a4;
+  border-radius: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smooting: antialiased;
+  -moz-osx-font-smooting: grayscale;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+button.primary:hover {
+  border: 0.1rem solid #242424;
+}
+
+button.fw {
+  width: 100%;
+  background-color: #e6cf02;
+  color: #242424;
+}
+/* Common styles*/
+.dFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.dFlex.center {
+  justify-content: center;
+}
+
+/* Grid style*/
+.gridContainer {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100vh;
+}
+header {
+  grid-template-areas: header;
+  background: #203040;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+header .link {
+  color: #ffffff;
+  padding: 1rem;
+}
+
+main {
+  grid-template-areas: main;
+  width: 100%;
+}
+footer {
+  grid-template-areas: footer;
+  background: #203040;
+  color: #ffffff;
+}
