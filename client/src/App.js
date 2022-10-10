@@ -14,7 +14,7 @@ function App() {
           <header className=" dFlex center">
             <Navbar />
           </header>
-          <main className="dFlex center">
+          <main>
             <Routes>
               <Route path="/" element={<HomePage/>} />
               <Route path="/product/:id" element={<SingleProduct />} />

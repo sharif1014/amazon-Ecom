@@ -12,7 +12,6 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
   scroll-behavior: smooth;
 }
 h1 {
@@ -59,6 +58,21 @@ button.fw {
   background-color: #e6cf02;
   color: #242424;
 }
+button.disabled {
+  color: #a02020;
+  cursor: not-allowed;
+}
+.loading {
+  background-color: #ffffff;
+  color: #474746;
+}
+.error {
+  padding: 1rem;
+  background-color: #ffc9d1;
+  border: 0.1rem solid #a02020;
+  color: #a02020;
+  border-radius: 0.5rem;
+}
 /* Common styles*/
 .dFlex {
   display: flex;
@@ -69,9 +83,9 @@ button.fw {
 .dFlex.center {
   justify-content: center;
 }
-
 /* Grid style*/
 .gridContainer {
+  width: 100%;
   display: grid;
   grid-template-areas: "header" "main" "footer";
   grid-template-columns: 1fr;
@@ -79,7 +93,7 @@ button.fw {
   height: 100vh;
 }
 header {
-  grid-template-areas: header;
+  grid-area: header;
   background: #203040;
   position: sticky;
   top: 0;
@@ -91,11 +105,12 @@ header .link {
 }
 
 main {
-  grid-template-areas: main;
+  grid-area: main;
   width: 100%;
+  padding: 1rem;
 }
 footer {
-  grid-template-areas: footer;
+  grid-area: footer;
   background: #203040;
   color: #ffffff;
 }

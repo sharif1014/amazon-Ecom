@@ -9,6 +9,11 @@
   color: #2b2a2a;
   font-size: 6.4rem;
 }
+.arrow {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
 .empty span {
   color: #fc0707;
   font-size: 6rem;
